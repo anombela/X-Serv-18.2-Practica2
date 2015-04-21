@@ -35,7 +35,7 @@ def urlacorta(request, recurso):
 
         cuerpo = "http://" + cuerpo
         try:
-            newurl = Url.objects.get(url=cuerpo)
+            newurl = Pages.objects.get(url=cuerpo)
 
         except:
             newurl = Url(url=cuerpo)
